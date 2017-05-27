@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+			}
+
+			.calender{
+				margin: 0 auto;
+				width: 445px;
+				height: 630px;
+				box-shadow: 5px 6px 8px #212121;
+			}
+			
+			.calender{
+				background-color: #272C3D;
+			}
+			.top-clock{
+				
+			}
+			.top-time{
+				padding: 42px 0px 20px 32px;
+				color: white;
+				font: 32px/32px "微软雅黑";
+			}
+			.top-date{
+				color: #2D66F2;
+				font:16px/16px arial;
+				padding: 14px 0px 20px 32px;
+			}
+			.top-date span{
+				margin-right:8px ;
+			}
+			.center-time{
+				color: white;
+				font: 16px/16px "微软雅黑";
+			}
+			.center-time p{
+				width: 187px;
+				display: inline-block;
+			}
+			.center-time p:nth-of-type(1){
+				padding: 5px 0px 16px 32px;
+			}
+			.center-time p:nth-of-type(2){
+				text-align: right;
+			}
+			.center-time p:nth-of-type(2) span{
+				margin-right:24px ;
+				cursor: pointer;
+			}
+			.bottom-time{
+				font-size: 20px;
+				color: white;
+				padding: 0px 50px 45px 41px;
+			}
+			.day li{
+				float: left;
+				padding: 21px 15px 21px 15px;
+				text-align: center;
+				cursor: pointer;
+			}
+			.date li{
+				width: 50px;
+				height: 60px;
+				text-align: center;
+				float: left;
+			    line-height: 60px;
+			}
+			.date li a{
+				display: block;
+				width: 48px;
+				height: 58px;
+			}
+			.date li:nth-of-type(26) a{
+				background-color: #FF6600;
+				border: 1px solid white;
+			}
+			.gray-day{
+				color: #777777;
+			}
+			.active{
+				background-color: #FF6600;
+				border: 1px solid white;
+			}
+			.date li:nth-of-type(1) a,.date li:nth-of-type(33) a,.date li:nth-of-type(34) a,.date li:nth-of-type(35) a,.date li:nth-of-type(36) a,.date li:nth-of-type(37) a,.date li:nth-of-type(38) a{
+				color: #777777;
+			}
+			.date li:nth-of-type(39) a,.date li:nth-of-type(40) a,.date li:nth-of-type(41) a,.date li:nth-of-type(42) a{
+				color: #777777;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="calender">
+			<div class="top-clock">
+				<div class="top-time">
+					<span>15</span><span>:</span>
+					<span>19</span><span>:</span>
+					<span>09</span>
+				</div>
+				<div class="top-date">
+					<span>2017:</span>
+					<span>05:</span>
+					<span>25,</span>
+					<span>星期</span>
+					<span>四</span>
+				</div>
+				
+			</div>
+			<div class="center-time">
+				<p>
+				<span>2017</span>
+				<span>年</span>
+				<span>05</span>
+				<span>月</span>
+				</p>
+				<p><span id="left">左</span><span id="right">右</span></p>
+			</div>
+			<div class="bottom-time">
+				<div class="day">
+					<ul>
+						<li>日</li>
+						<li>一</li>
+						<li>二</li>
+						<li>三</li>
+						<li>四</li>
+						<li>五</li>
+						<li>六</li>
+					</ul>
+				</div>
+				<div class="date">
+					<ul>
+					<li><a href="">30</a></li>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li><a href="">6</a></li>
+					<li><a href="">7</a></li>
+					<li><a href="">8</a></li>
+					<li><a href="">9</a></li>
+					<li><a href="">10</a></li>
+					<li><a href="">11</a></li>
+					<li><a href="">12</a></li>
+					<li><a href="">13</a></li>
+					<li><a href="">14</a></li>
+					<li><a href="">15</a></li>
+					<li><a href="">16</a></li>
+					<li><a href="">17</a></li>
+					<li><a href="">18</a></li>
+					<li><a href="">19</a></li>
+					<li><a href="">20</a></li>
+					<li><a href="">21</a></li>
+					<li><a href="">22</a></li>
+					<li><a href="">23</a></li>
+					<li><a href="">24</a></li>
+					<li><a href="">25</a></li>
+					<li><a href="">26</a></li>
+					<li><a href="">27</a></li>
+					<li><a href="">28</a></li>
+					<li><a href="">29</a></li>
+					<li><a href="">30</a></li>
+					<li><a href="">31</a></li>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li><a href="">6</a></li>
+					<li><a href="">7</a></li>
+					<li><a href="">8</a></li>
+					<li><a href="">9</a></li>
+					<li><a href="">10</a></li>  
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

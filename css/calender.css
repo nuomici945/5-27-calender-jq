@@ -1,0 +1,126 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+li:hover{
+	cursor: pointer;
+}
+
+#warp{
+	width: 440px;
+	height: 627px;
+	background-color: #272c3d;
+	margin:10px auto;
+	box-shadow: 2px 4px 6px #212121;
+	position: relative;
+}
+#warp #box{
+	width: 367px;
+	height: 583px;
+	margin: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#nowtime h1{
+	color: #f8ffff;
+	font-family: "宋体";
+}
+
+#date{
+	width: 350px;
+	height: 26px;
+}
+#date p{
+	color: #598ff2;
+	height: 26px;
+	line-height: 26px;
+	font-family: "宋体";
+}
+
+#switch{
+	width: 367px;
+	height: 45px;
+}
+
+#switch p{
+	float: left;
+	line-height: 45px;
+	color: #fff;
+	font-family: "宋体";
+}
+
+#switch ul{
+	width: 54px;
+	height: 45px;
+	float: right;
+}
+
+#switch ul li{
+	width: 18px;
+	height: 45px;
+	float: left;
+	line-height: 45px;
+	color: #fff;
+}
+
+#switch ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#switch>ul>li:nth-of-type(2){
+	margin-left: 18px;
+}
+
+#dates{
+	width: 350px;
+	height: 434px;
+}
+
+#week{
+	width: 350px;
+	height: 62px;
+}
+
+#week li{
+	width: 50px;
+	height: 62px;
+	float: left;
+	text-align: center;
+	line-height: 62px;
+	color: #fff;
+}
+
+#day{
+	width: 350px;
+	height: 372px;
+	list-style: none;
+}
+
+#day li{
+	width: 50px;
+	height: 62px;
+	float: left;
+	text-align: center;
+	line-height: 62px;
+	color: #fff;
+}
+
+.selected{
+	background-color: #ff6600;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+
+#day .prev{
+	opacity: .5;
+}
